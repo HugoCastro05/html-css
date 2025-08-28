@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    <header>
+<body onresize="mudoutamanho()">
+    <header onresize="mudoutamanho()">
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickmenu()" >menu</span>
         <menu id="itens">
@@ -33,6 +34,14 @@
         </article>
     </main>
     <script>
+        function mudoutamanho() {
+             if (window.innerWidth >= 768 ) {
+                itens.style.display = 'block'
+             } else {
+                itens.style.display = 'none'
+             }
+        }
+
         function clickmenu() {
             if (itens.style.display == 'block' ) {
                 itens.style.display = 'none'
