@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
-
-header, header nav {
-    flex-flow: column nowrap;
+body {
+    background-color: lightslategray;
 }
 
+header, header nav {
+    
+    flex-flow: column nowrap;
+}
 header h1 {
-    flex-basis: 50px;
+    flex-basis: 60px;
 }
 
 header a {
